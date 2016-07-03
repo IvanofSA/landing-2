@@ -1,0 +1,7 @@
+{
+  "name": "consultation",
+  "dependencies": {
+    "normalize-scss": "~3.0.3",
+    "jquery": "~2.1.4"
+  }
+}

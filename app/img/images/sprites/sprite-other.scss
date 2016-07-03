@@ -1,0 +1,125 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$download-name: 'download';
+$download-x: 87px;
+$download-y: 0px;
+$download-offset-x: -87px;
+$download-offset-y: 0px;
+$download-width: 18px;
+$download-height: 13px;
+$download-total-width: 405px;
+$download-total-height: 31px;
+$download-image: 'sprite-other.png';
+$download: (87px, 0px, -87px, 0px, 18px, 13px, 405px, 31px, 'sprite-other.png', 'download', );
+$keyboard-name: 'keyboard';
+$keyboard-x: 264px;
+$keyboard-y: 0px;
+$keyboard-offset-x: -264px;
+$keyboard-offset-y: 0px;
+$keyboard-width: 35px;
+$keyboard-height: 21px;
+$keyboard-total-width: 405px;
+$keyboard-total-height: 31px;
+$keyboard-image: 'sprite-other.png';
+$keyboard: (264px, 0px, -264px, 0px, 35px, 21px, 405px, 31px, 'sprite-other.png', 'keyboard', );
+$lamp-name: 'lamp';
+$lamp-x: 175px;
+$lamp-y: 0px;
+$lamp-offset-x: -175px;
+$lamp-offset-y: 0px;
+$lamp-width: 19px;
+$lamp-height: 28px;
+$lamp-total-width: 405px;
+$lamp-total-height: 31px;
+$lamp-image: 'sprite-other.png';
+$lamp: (175px, 0px, -175px, 0px, 19px, 28px, 405px, 31px, 'sprite-other.png', 'lamp', );
+$mail-name: 'mail';
+$mail-x: 369px;
+$mail-y: 0px;
+$mail-offset-x: -369px;
+$mail-offset-y: 0px;
+$mail-width: 36px;
+$mail-height: 23px;
+$mail-total-width: 405px;
+$mail-total-height: 31px;
+$mail-image: 'sprite-other.png';
+$mail: (369px, 0px, -369px, 0px, 36px, 23px, 405px, 31px, 'sprite-other.png', 'mail', );
+$think-name: 'think';
+$think-x: 0px;
+$think-y: 0px;
+$think-offset-x: 0px;
+$think-offset-y: 0px;
+$think-width: 17px;
+$think-height: 31px;
+$think-total-width: 405px;
+$think-total-height: 31px;
+$think-image: 'sprite-other.png';
+$think: (0px, 0px, 0px, 0px, 17px, 31px, 405px, 31px, 'sprite-other.png', 'think', );
+$spritesheet-width: 405px;
+$spritesheet-height: 31px;
+$spritesheet-image: 'sprite-other.png';
+$spritesheet-sprites: ($download, $keyboard, $lamp, $mail, $think, );
+$spritesheet: (405px, 31px, 'sprite-other.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url('../img/images/sprites/#{$sprite-image}');
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

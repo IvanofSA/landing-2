@@ -1,0 +1,213 @@
+extends ../main
+block title
+  | Главная страница
+block content
+  header.header
+    .header__top#menu
+      .container
+        .row
+          a(href="#").logo
+            img(src="app/img/images/logo2.png" alt="spak logo").logo__img
+          nav.navigation__menu
+              ul.naviagtion__menu__list
+                li.naviagtion__menu__item
+                  a(href="#about__company").naviagtion__menu__link О Компании
+                li.naviagtion__menu__item
+                  a(href="#our__values").naviagtion__menu__link Почему мы?
+                li.naviagtion__menu__item
+                  a(href="#client").naviagtion__menu__link Довольные клиенты
+                li.naviagtion__menu__item
+                  a(href="#price__course").naviagtion__menu__link Цены
+                li.naviagtion__menu__item
+                  a(href="#contact-us").naviagtion__menu__link Связаться с нами
+                li.naviagtion__menu__item
+                  a(href="#course").naviagtion__menu__link О вебинарах
+                li.naviagtion__menu__item
+                  a(href="#download").naviagtion__menu__link Полезная документация
+    .header__bottom
+      .wrap-parallax
+        .container
+          .row
+            .col-md-6
+              .header__left.left
+                a(href="#").logo
+                  img(src="app/img/images/logo2.png" alt="spak logo").logo__img
+                .title__wrap-main
+                  p.title-big Здесь вас научат работать с недвижемостью настоящии проффесионалы!!
+                  p.title__litle  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa odio ipsa qui doloremque, perferendis voluptatum explicabo quas quisquam eum vero alias facilis consectetur, quasi voluptatibus sequi obcaecati officia nemo impedit.
+                  a(href="#").course__go-btn.btn К курсу 
+            .col-md-6
+              .header__right.right
+                .clock
+                .message
+                  #flipcountdownbox1
+  section.about__company#about__company
+    .container
+      .row
+        .col-md-6
+          .about__company-left.left-animations
+            .header__title-wrap.about__company-title-wrap
+              h2.header__title-text.about__company-title О компании
+              p.header__title-text_litle.about__company-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora quia iure consequatur quasi. Quae vel a deleniti illum, similique et suscipit perferendis, facilis magni aliquam ipsum ullam officia voluptates obcaecati.
+        .col-md-6
+          .about__company-right.right-animations
+            .slider
+              ul.bxslider
+                li
+                  img(src="http://lorempixel.com/450/200/city/")
+                li
+                  img(src="http://lorempixel.com/450/200/food/")
+                li
+                  img(src="http://lorempixel.com/450/200/sports/")
+  section.our__values#our__values
+    .container
+      .row
+        .col-md-12
+          .header__title-wrap
+            h2.header__title-text Почему мы? 
+            p.header__title-text_litle Мы подскажем, мы поможем 
+      .row
+        .col-md-4
+          .skills__item.skills__item-ideas.up-animations
+            .skills__icons-border
+              .skills__icons
+            .skills__title
+              h2 Лучшие
+            .skills__text
+              p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint inventore doloribus quia illum necessitatibus, dignissimos sequi obcaecati incidunt
+        .col-md-4
+          .skills__item.skills__item-advantages.up-animations
+            .skills__icons-border
+              .skills__icons
+            .skills__title
+              h2 Лучшие
+            .skills__text
+              p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint inventore doloribus quia illum necessitatibus, dignissimos sequi obcaecati incidunt dolorum, delectus.
+        .col-md-4
+          .skills__item.skills__item-action.up-animations
+            .skills__icons-border
+              .skills__icons
+            .skills__title
+              h2 Лучшие
+            .skills__text
+              p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint inventore doloribus quia illum necessitatibus, dignissimos sequi obcaecati incidunt dolorum, delectus.
+  section.course#course
+    .container
+      .row
+        .col-md-8
+          ul.controls__tabs
+            li(data-class="first").controls__tabs-item.active
+              a(href="#").controls__tabs-link link1
+            li(data-class="second").controls__tabs-item
+              a(href="#").controls__tabs-link link2
+          ul.tabs__list
+            li.tabs__item.tabs__item_first.active
+              h2  Lorem ipsum dolor sit amet.
+              p   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui in doloribus fugit voluptatem suscipit eos pariatur non quidem placeat repellat libero vero, quod sit minima iste necessitatibus omnis cupiditate. Rerum, ratione? Neque sequi assumenda error qui facilis voluptatibus, inventore amet, expedita nostrum dignissimos alias ipsum laborum corrupti doloribus, soluta quo!
+            li.tabs__item.tabs__item_second
+              h2 tab2
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, modi.
+        .col-md-4
+          .course-right.right-animations
+            img(src="app/img/images/town/town-icon.png" alt="town").town__img
+  section.client#client
+    .container
+      .row
+        .col-md-12
+          .header__title-wrap
+            h2.header__title-text Наше значение
+            p.header__title-text_litle Наше значение
+      .row
+        .col-md-4
+          .messages__item
+            .messages__text.down-animations Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis non ducimus illo nesciunt consequatur deleniti? Modi repudiandae, accusantium dolorem maiores.
+            .client-wrap.up-animations
+              .client__foto-wrap
+                img(src="app/img/images/nf-2.png" alt="foto client").client__foto
+              .client__name-wrap
+                p.client__name Алекснадр 
+                p.client__post Кусок бомжа
+        .col-md-4
+          .messages__item
+            .messages__text.down-animations Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum odit qui fugit ipsa hic tenetur saepe incidunt, eveniet sed libero!
+            .client-wrap.up-animations
+              .client__foto-wrap
+                img(src="app/img/images/client.jpg" alt="foto client").client__foto
+              .client__name-wrap
+                p.client__name Алекснадр 
+                p.client__post Кусок бомжа
+        .col-md-4
+          .messages__item
+            .messages__text.down-animations Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi omnis dignissimos unde nemo, delectus minus veniam excepturi vel. Voluptatum, minima.
+            .client-wrap.up-animations
+              .client__foto-wrap
+                img(src="app/img/images/client.jpg" alt="foto client").client__foto
+              .client__name-wrap
+                p.client__name Алекснадр 
+                p.client__post Кусок бомжа
+  section.price__course#price__course
+    .container
+      .row
+        .col-md-12
+          .header__title-wrap
+            h2.header__title-text Наше значение
+            p.header__title-text_litle Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.
+      .row
+        .col-md-3.col-md-offset-3
+          ul.price__list.price__list-base.left-animations
+            li.price__item  Базовый пакет
+            li.price__item  $56
+              p.price__comment Цена может зависить от месяца
+            li.price__item
+            li.price__item  Lorem ipsum dolor sit amet.
+            li.price__item  Lorem ipsum dolor sit amet.
+            li.price__item  Lorem ipsum dolor sit amet.
+            li.price__item  Lorem ipsum dolor sit amet.
+        .col-md-6
+          ul.price__list.price__list-full.right-animations
+            li.price__item  Полный пакет
+            li.price__item  $34
+              p.price__comment Цена может зависить от месяца
+            li.price__item.price__item-full   Lorem ipsum dolor sit amet.
+            li.price__item  Lorem ipsum dolor sit amet.
+            li.price__item Lorem ipsum dolor sit amet.
+            li.price__item  Lorem ipsum dolor sit amet.
+            li.price__item  Lorem ipsum dolor sit amet.
+  section.download#download
+    .wrap-paralax-download
+      .container
+        .row
+          .col-md-12
+            .header__title-wrap
+              h2.header__title-text Наше значение
+              p.header__title-text_litle Наше значение  
+            a(href="#").btn.download__button download
+  section.contact-us#contact-us
+    .container
+      .row
+        .col-md-12
+          .header__title-wrap
+            h2.header__title-text Наше значение
+            p.header__title-text_litle Наше значение
+        form(method="" name="form" id="feedback-form").form__mail
+          .col-md-6
+            input(type="text" name="username"  placeholder="Name").input
+            input(type="email" name="email" placeholder="Email").input
+            input(type="tel" name="phone" placeholder="Phone").input.input__phone
+          .col-md-6
+            textarea(rows="6" class="messages" name="messages" placeholder="Messages").input.messages__contact
+          .col-md-12
+            input(type="submit" name="send" value="Send message").button
+  footer.footer
+    .container
+      .row
+        .col-md-6
+          .contacts__phone-wrap
+            a(href="tel:+999999999").contacts__phone +9 (999) 999-99-99
+          - var icons = ["vk", "fb", "tw"]
+        .col-md-6
+          ul.socials__list-footer
+            each icon in icons
+              li(class="socials__item-footer socials__item-footer_" + icon)
+                a(href="#" class="socials__link-footer socials__link-footer_" + icon)
+                

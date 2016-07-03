@@ -1,0 +1,29 @@
+.download{
+  background: url('../img/images/town/town-footer.jpg') center center no-repeat;
+  width: 100%;
+  background-size: cover;
+
+    .header__title-wrap {
+    padding-top: 75px;
+    text-align: center;
+    }
+    .header__title-text{
+      color: $color-white;
+      font-family: 'open_sanssemibold', sans-serif;
+    }
+    .header__title-text:after{
+     margin: 0 auto;
+     width: 64px;
+     padding-top: 20px;
+     margin-bottom: 20px;
+     border-bottom: 2px solid $color-white;
+     }
+     .header__title-text_litle{
+       margin-bottom: 81px;
+       color: $color-gray;
+     }
+     .btn{
+        margin: 0 auto;
+        margin-bottom: 50px;
+     }
+}

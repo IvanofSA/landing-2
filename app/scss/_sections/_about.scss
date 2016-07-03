@@ -1,0 +1,67 @@
+.about__company{
+  width: 100%;
+  padding: 50px 0;
+  background: #f5f5f5;
+  .header__title-wrap{
+    text-align: left;
+  }
+}
+  .header__title-text{
+    font-family: 'open_sanssemibold', sans-serif;
+    margin: 0;
+    color: $color-black;
+    margin-bottom: 25px;
+    font-size: em(36px);
+  }
+  .header__title-text:after{
+   content: '';
+   width: 64px;
+   margin-top: 30px;
+   display: block;
+   border-bottom: 2px solid #ff9933;
+ }
+ .header__title-text_litle{
+    color:$color-gray ;
+ }
+
+/////////стилизация bxslaider
+
+  .bx-wrapper{
+    margin: 10px auto;
+    width: 100%; //455px
+    position: relative;
+/*
+	Agilis, 400
+*/
+
+
+
+    .bx-viewport{
+      border: none;
+      height: 200px;
+      li {
+        width: 450px;
+      }
+    }
+  }
+    /*  Скрывать пагинацию  */
+    .bx-pager{
+        top: -30px;
+      .bx-pager-item{
+        a{
+          width: 6px!important;
+          height: 6px!important;
+          margin: 0 3px!important;
+          &:first-child{
+            background: #ff9933;
+          }
+        }
+        .active{
+          background: green!important;
+        }
+      }
+    }
+    /*  Кнопки перемотки  */
+    .bx-controls-direction{
+      display: none;
+    }

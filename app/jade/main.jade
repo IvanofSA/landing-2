@@ -1,0 +1,39 @@
+doctype html
+html(lang="ru-RU")
+    head
+        meta(charset="utf-8")
+        meta(http-equiv='X-UA-Compatible', content="IE = edge")
+        meta(name='viewport' content='width=device-width')
+        meta(name="keywords" content="")
+        meta(name="author" content="Иванов Сергей")
+        link(rel="shortcut icon" href="img/favicon.ico" type="image/x-icon")
+        link(rel="icon" href="img/favicon.ico" type="image/x-icon")
+        //bower:css
+        link(href="app/css/plugins/normalize.css" rel="stylesheet")
+        link(href="app/css/plugins/flipclock.css" rel="stylesheet")
+        link(href="app/css/plugins/jquery.bxslider.css" rel="stylesheet")
+        link(rel="stylesheet" href="app/css/plugins/animate.min.css")
+        // endbower
+        link(rel="stylesheet" type='text/css' href="app/fonts/stylesheet.css")
+        link(rel="stylesheet" type='text/css' href="app/css/main.css")
+
+        title
+            block title
+    body
+    .wrapper
+        block content
+
+    //- inject:vendorNotBower.js
+    // bower:js
+    //script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
+    script(src='app/js/_plugins/jquery.min.js')
+    script(src='app/js/_plugins/flipclock.min.js')
+    script(src='app/js/_plugins/jquery.bxslider.min.js')
+    script(src='app/js/_plugins/animate-css.js')
+    script(src='app/js/_plugins/view.min.js')
+    script(src='app/js/_plugins/mask.min.js')
+    script(src='app/js/_plugins/jquery.validate.min.js')
+    script(src='app/js/main.js')
+
+    // endbower
+    //- endinject

@@ -1,0 +1,73 @@
+.client{
+  padding: 50px 0;
+  .header__title-wrap{
+    text-align: center;
+  }
+  .header__title-text:after{
+   margin: 0 auto;
+   width: 64px;
+   padding-top: 20px;
+   margin-bottom: 20px;
+   }
+}
+.client-wrap{
+  margin-bottom: 30px;
+  @include clearfix;
+}
+  .messages__list{
+    margin: 0 auto;
+  }
+  .messages__item{
+    display: inline-block;
+    &:first-child{
+      margin-left: 0;
+    }
+  }
+  .messages__text{
+    min-height: 140px;
+    background: #f5f5f5;
+    border-radius: 5px;
+    padding: 20px 15px;
+    font: 14px/150% $body-font;
+    font-style: italic;
+    color: $color-gray;
+    position: relative;
+    margin-bottom: 20px;
+
+    &:after{
+      display: block;
+      content: '';
+      width: 0;
+      height: 0;
+      position: absolute;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 10px solid #f5f5f5;
+      bottom: -9px;
+    }
+  }
+  .client__foto-wrap{
+    width: 70px;
+    height: 70px;
+    border-radius: 50% 50%;
+    overflow: hidden;
+    float: left;
+  }
+  .client__foto{
+    max-width: 100%;
+    height: auto;
+  }
+  .client__name-wrap{
+    float: left;
+    margin-left: 14px;
+    padding-top: 15px;
+  }
+  .client__name{
+    font: 20px/100% 'open_sansbold', sans-serif;
+    margin-bottom: 8px;
+    color: $color-black;
+  }
+  .client__post{
+    font: 14px/100% 'open_sansregular', sans-serif;
+    color: $color-gray;
+  }

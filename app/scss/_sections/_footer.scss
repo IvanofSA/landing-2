@@ -1,0 +1,57 @@
+@import "../img/images/sprites/_sprite";
+
+.footer{
+  width: 100%;
+  height: 60px;
+  background: #000;
+}
+.contacts__phone-wrap{
+  text-align: center;
+  min-height: 60px;
+  line-height: 60px;
+}
+.contacts__phone{
+  text-decoration: none;
+  color: #ccc;
+  font-size: 1.3em;
+  &:hover{
+    color: #ff9933;
+  }
+}
+.socials__list-footer{
+  min-height: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+.socials__item-footer {
+  display: inline-block;
+  margin-left: 15px;
+  line-height: normal;
+  vertical-align: middle;
+  &:first-child{
+    margin-left: 0;
+  }
+}
+.socials__link-footer{
+  display: block;
+  text-decoration: none;
+
+}
+.socials__link-footer_vk {
+  @include sprite($vk-f);
+  &:hover{
+    @include sprite($vk-f-hover);
+  }
+}
+.socials__link-footer_fb {
+  @include sprite($fb-f);
+  &:hover{
+    @include sprite($fb-f-hover);
+  }
+}
+.socials__link-footer_tw {
+  @include sprite($tw-f);
+  &:hover{
+    @include sprite($tw-f-hover);
+  }
+}

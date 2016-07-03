@@ -1,0 +1,6 @@
+app/bower
+node_modules
+dist
+.sass-cache
+.idea/
+bourbon

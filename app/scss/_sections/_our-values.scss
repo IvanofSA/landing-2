@@ -1,0 +1,97 @@
+@import "../img/images/sprites/_sprite";
+
+.our__values{
+  padding: 50px 0;
+  background: #fff;
+  width: 100%;
+  .header__title-wrap{
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .header__title-text{
+    margin-bottom: 30px;
+  }
+  .header__title-text:after{
+   margin: 0 auto;
+   margin-top: 20px;
+   width: 64px;
+   }
+}
+  .skills__list{
+    margin: 0 auto;
+
+  }
+  .skills__item{
+    text-align: center;
+    p {
+      color: $color-gray ;
+    }
+  }
+  .skills__title{
+    h2{
+      color: $color-black;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  .skills__icons-border{
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    border: 2px solid #ff9933;
+    border-radius: 50% 50%;
+  }
+  .skills__icons{
+    margin: 0 auto;
+    margin-top: 18px;
+  }
+  .skills__item-ideas{
+    .skills__icons{
+      @include sprite($lamp);
+    }
+  }
+  .skills__item-advantages{
+    .skills__icons{
+      @include sprite($keyboard);
+      margin-top: 21px;
+    }
+  }
+
+  .skills__item-action{
+    .skills__icons{
+      @include sprite($think);
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+  // .skills__list{
+  //   text-align: center;
+  //   margin-bottom: 106px;
+  //   width: 79.71428571428571%;
+  //   margin-left: 10.14285714285714%;
+  // }
+  // .skills__item{
+  //   text-align: center;
+  //   display: inline-block;
+  //   width:26.57142857142857%;
+  //   margin-left: 32px;
+  //   &:first-child{
+  //     margin-left: 0;
+  //   }
+  // }
+
+  // // .skills__icons{
+  // //   position: absolute;
+  // // }
+
+  // //

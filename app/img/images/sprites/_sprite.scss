@@ -1,0 +1,272 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$download-name: 'download';
+$download-x: 464px;
+$download-y: 88px;
+$download-offset-x: -464px;
+$download-offset-y: -88px;
+$download-width: 18px;
+$download-height: 13px;
+$download-total-width: 483px;
+$download-total-height: 363px;
+$download-image: 'sprite.png';
+$download: (464px, 88px, -464px, -88px, 18px, 13px, 483px, 363px, 'sprite.png', 'download', );
+$fb-f-hover-name: 'fb-f-hover';
+$fb-f-hover-x: 372px;
+$fb-f-hover-y: 92px;
+$fb-f-hover-offset-x: -372px;
+$fb-f-hover-offset-y: -92px;
+$fb-f-hover-width: 32px;
+$fb-f-hover-height: 32px;
+$fb-f-hover-total-width: 483px;
+$fb-f-hover-total-height: 363px;
+$fb-f-hover-image: 'sprite.png';
+$fb-f-hover: (372px, 92px, -372px, -92px, 32px, 32px, 483px, 363px, 'sprite.png', 'fb-f-hover', );
+$fb-f-name: 'fb-f';
+$fb-f-x: 92px;
+$fb-f-y: 248px;
+$fb-f-offset-x: -92px;
+$fb-f-offset-y: -248px;
+$fb-f-width: 32px;
+$fb-f-height: 32px;
+$fb-f-total-width: 483px;
+$fb-f-total-height: 363px;
+$fb-f-image: 'sprite.png';
+$fb-f: (92px, 248px, -92px, -248px, 32px, 32px, 483px, 363px, 'sprite.png', 'fb-f', );
+$fb-hover-name: 'fb-hover';
+$fb-hover-x: 124px;
+$fb-hover-y: 0px;
+$fb-hover-offset-x: -124px;
+$fb-hover-offset-y: 0px;
+$fb-hover-width: 64px;
+$fb-hover-height: 64px;
+$fb-hover-total-width: 483px;
+$fb-hover-total-height: 363px;
+$fb-hover-image: 'sprite.png';
+$fb-hover: (124px, 0px, -124px, 0px, 64px, 64px, 483px, 363px, 'sprite.png', 'fb-hover', );
+$fb-name: 'fb';
+$fb-x: 0px;
+$fb-y: 124px;
+$fb-offset-x: 0px;
+$fb-offset-y: -124px;
+$fb-width: 64px;
+$fb-height: 64px;
+$fb-total-width: 483px;
+$fb-total-height: 363px;
+$fb-image: 'sprite.png';
+$fb: (0px, 124px, 0px, -124px, 64px, 64px, 483px, 363px, 'sprite.png', 'fb', );
+$keyboard-name: 'keyboard';
+$keyboard-x: 96px;
+$keyboard-y: 340px;
+$keyboard-offset-x: -96px;
+$keyboard-offset-y: -340px;
+$keyboard-width: 35px;
+$keyboard-height: 21px;
+$keyboard-total-width: 483px;
+$keyboard-total-height: 363px;
+$keyboard-image: 'sprite.png';
+$keyboard: (96px, 340px, -96px, -340px, 35px, 21px, 483px, 363px, 'sprite.png', 'keyboard', );
+$lamp-name: 'lamp';
+$lamp-x: 464px;
+$lamp-y: 0px;
+$lamp-offset-x: -464px;
+$lamp-offset-y: 0px;
+$lamp-width: 19px;
+$lamp-height: 28px;
+$lamp-total-width: 483px;
+$lamp-total-height: 363px;
+$lamp-image: 'sprite.png';
+$lamp: (464px, 0px, -464px, 0px, 19px, 28px, 483px, 363px, 'sprite.png', 'lamp', );
+$mail-name: 'mail';
+$mail-x: 0px;
+$mail-y: 340px;
+$mail-offset-x: 0px;
+$mail-offset-y: -340px;
+$mail-width: 36px;
+$mail-height: 23px;
+$mail-total-width: 483px;
+$mail-total-height: 363px;
+$mail-image: 'sprite.png';
+$mail: (0px, 340px, 0px, -340px, 36px, 23px, 483px, 363px, 'sprite.png', 'mail', );
+$think-name: 'think';
+$think-x: 372px;
+$think-y: 184px;
+$think-offset-x: -372px;
+$think-offset-y: -184px;
+$think-width: 17px;
+$think-height: 31px;
+$think-total-width: 483px;
+$think-total-height: 363px;
+$think-image: 'sprite.png';
+$think: (372px, 184px, -372px, -184px, 17px, 31px, 483px, 363px, 'sprite.png', 'think', );
+$tw-f-hover-name: 'tw-f-hover';
+$tw-f-hover-x: 184px;
+$tw-f-hover-y: 248px;
+$tw-f-hover-offset-x: -184px;
+$tw-f-hover-offset-y: -248px;
+$tw-f-hover-width: 32px;
+$tw-f-hover-height: 32px;
+$tw-f-hover-total-width: 483px;
+$tw-f-hover-total-height: 363px;
+$tw-f-hover-image: 'sprite.png';
+$tw-f-hover: (184px, 248px, -184px, -248px, 32px, 32px, 483px, 363px, 'sprite.png', 'tw-f-hover', );
+$tw-f-name: 'tw-f';
+$tw-f-x: 276px;
+$tw-f-y: 248px;
+$tw-f-offset-x: -276px;
+$tw-f-offset-y: -248px;
+$tw-f-width: 32px;
+$tw-f-height: 32px;
+$tw-f-total-width: 483px;
+$tw-f-total-height: 363px;
+$tw-f-image: 'sprite.png';
+$tw-f: (276px, 248px, -276px, -248px, 32px, 32px, 483px, 363px, 'sprite.png', 'tw-f', );
+$tw-hover-name: 'tw-hover';
+$tw-hover-x: 248px;
+$tw-hover-y: 124px;
+$tw-hover-offset-x: -248px;
+$tw-hover-offset-y: -124px;
+$tw-hover-width: 64px;
+$tw-hover-height: 64px;
+$tw-hover-total-width: 483px;
+$tw-hover-total-height: 363px;
+$tw-hover-image: 'sprite.png';
+$tw-hover: (248px, 124px, -248px, -124px, 64px, 64px, 483px, 363px, 'sprite.png', 'tw-hover', );
+$tw-name: 'tw';
+$tw-x: 248px;
+$tw-y: 0px;
+$tw-offset-x: -248px;
+$tw-offset-y: 0px;
+$tw-width: 64px;
+$tw-height: 64px;
+$tw-total-width: 483px;
+$tw-total-height: 363px;
+$tw-image: 'sprite.png';
+$tw: (248px, 0px, -248px, 0px, 64px, 64px, 483px, 363px, 'sprite.png', 'tw', );
+$vk-f-hover-name: 'vk-f-hover';
+$vk-f-hover-x: 0px;
+$vk-f-hover-y: 248px;
+$vk-f-hover-offset-x: 0px;
+$vk-f-hover-offset-y: -248px;
+$vk-f-hover-width: 32px;
+$vk-f-hover-height: 32px;
+$vk-f-hover-total-width: 483px;
+$vk-f-hover-total-height: 363px;
+$vk-f-hover-image: 'sprite.png';
+$vk-f-hover: (0px, 248px, 0px, -248px, 32px, 32px, 483px, 363px, 'sprite.png', 'vk-f-hover', );
+$vk-f-name: 'vk-f';
+$vk-f-x: 372px;
+$vk-f-y: 0px;
+$vk-f-offset-x: -372px;
+$vk-f-offset-y: 0px;
+$vk-f-width: 32px;
+$vk-f-height: 32px;
+$vk-f-total-width: 483px;
+$vk-f-total-height: 363px;
+$vk-f-image: 'sprite.png';
+$vk-f: (372px, 0px, -372px, 0px, 32px, 32px, 483px, 363px, 'sprite.png', 'vk-f', );
+$vk-hover-name: 'vk-hover';
+$vk-hover-x: 124px;
+$vk-hover-y: 124px;
+$vk-hover-offset-x: -124px;
+$vk-hover-offset-y: -124px;
+$vk-hover-width: 64px;
+$vk-hover-height: 64px;
+$vk-hover-total-width: 483px;
+$vk-hover-total-height: 363px;
+$vk-hover-image: 'sprite.png';
+$vk-hover: (124px, 124px, -124px, -124px, 64px, 64px, 483px, 363px, 'sprite.png', 'vk-hover', );
+$vk-name: 'vk';
+$vk-x: 0px;
+$vk-y: 0px;
+$vk-offset-x: 0px;
+$vk-offset-y: 0px;
+$vk-width: 64px;
+$vk-height: 64px;
+$vk-total-width: 483px;
+$vk-total-height: 363px;
+$vk-image: 'sprite.png';
+$vk: (0px, 0px, 0px, 0px, 64px, 64px, 483px, 363px, 'sprite.png', 'vk', );
+$spritesheet-width: 483px;
+$spritesheet-height: 363px;
+$spritesheet-image: 'sprite.png';
+$spritesheet-sprites: ($download, $fb-f-hover, $fb-f, $fb-hover, $fb, $keyboard, $lamp, $mail, $think, $tw-f-hover, $tw-f, $tw-hover, $tw, $vk-f-hover, $vk-f, $vk-hover, $vk, );
+$spritesheet: (483px, 363px, 'sprite.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url('../img/images/sprites/#{$sprite-image}');
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

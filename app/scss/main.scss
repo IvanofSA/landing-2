@@ -1,0 +1,22 @@
+/* --------- mixins --------- */
+@import "bourbon/_bourbon";
+@import "_misc/_mixins";
+
+/* --------- adjustment --------- */
+
+@import "_misc/_adjustment";
+@import "_misc/_grid-bootstrap";
+
+/* --------- sections --------- */
+
+@import "_sections/_header";
+@import "_sections/_about";
+@import "_sections/_our-values";
+@import "_sections/_course";
+@import "_sections/_client";
+@import "_sections/_price";
+@import "_sections/_download";
+@import "_sections/_contact";
+@import "_sections/_footer";
+
+/* --------- sections --------- */
