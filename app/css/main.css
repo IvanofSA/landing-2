@@ -1211,13 +1211,13 @@ The `sprites` mixin generates identical output to the CSS template
     box-shadow: 1px 1px 14px #ff6600; }
 
 label.error {
-  color: red;
+  color: #ff0000;
   font-style: italic;
   font-size: 0.6875em; }
 
 input.error {
   border: 0;
-  border-bottom: 1px solid red; }
+  border-bottom: 1px solid #ff0000; }
 
 #username-error.error {
   position: absolute;
