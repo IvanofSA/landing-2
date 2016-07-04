@@ -9,7 +9,30 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px){
-
+  .fixed{
+    display: none!important;
+  }
+  .navigation__menu {
+    display: none;
+  }
+  .toggle_mnu {
+    display: block;
+  }
+  .wrap-parallax {
+    transform: translate(0%, 0%)!important;
+  }
+  .skills__item{
+    margin-bottom: 40px;
+  }
+  .course-right{
+    display: none;
+  }
+  .header__right{
+    display: none;
+  }
+  .price__list{
+    display: block;
+  }
 }
 	/**/
 

@@ -3,6 +3,27 @@ block title
   | Главная страница
 block content
   header.header
+    button.toggle_mnu
+      span.sandwich
+        span.sw-topper
+        span.sw-bottom
+        span.sw-footer
+    nav.top_mnu
+      ul.naviagtion__menu__list
+        li.naviagtion__menu__item
+          a(href="#about__company").naviagtion__menu__link О Компании
+        li.naviagtion__menu__item
+          a(href="#our__values").naviagtion__menu__link Почему мы?
+        li.naviagtion__menu__item
+          a(href="#client").naviagtion__menu__link Довольные клиенты
+        li.naviagtion__menu__item
+          a(href="#price__course").naviagtion__menu__link Цены
+        li.naviagtion__menu__item
+          a(href="#contact-us").naviagtion__menu__link Связаться с нами
+        li.naviagtion__menu__item
+          a(href="#course").naviagtion__menu__link О вебинарах
+        li.naviagtion__menu__item
+          a(href="#download").naviagtion__menu__link Полезная документация
     .header__top#menu
       .container
         .row
@@ -153,7 +174,7 @@ block content
             h2.header__title-text Наше значение
             p.header__title-text_litle Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.
       .row
-        .col-md-3.col-md-offset-3
+        .col-md-3.col-md-offset-3.col-sm-6.col-sm-offset-0
           ul.price__list.price__list-base.left-animations
             li.price__item  Базовый пакет
             li.price__item  $56
@@ -163,7 +184,7 @@ block content
             li.price__item  Lorem ipsum dolor sit amet.
             li.price__item  Lorem ipsum dolor sit amet.
             li.price__item  Lorem ipsum dolor sit amet.
-        .col-md-6
+        .col-md-6.col-sm-6
           ul.price__list.price__list-full.right-animations
             li.price__item  Полный пакет
             li.price__item  $34
@@ -201,11 +222,11 @@ block content
   footer.footer
     .container
       .row
-        .col-md-6
+        .col-md-6.col-sm-6.col-xs-6
           .contacts__phone-wrap
             a(href="tel:+999999999").contacts__phone +9 (999) 999-99-99
           - var icons = ["vk", "fb", "tw"]
-        .col-md-6
+        .col-md-6.col-sm-6.col-xs-6
           ul.socials__list-footer
             each icon in icons
               li(class="socials__item-footer socials__item-footer_" + icon)
